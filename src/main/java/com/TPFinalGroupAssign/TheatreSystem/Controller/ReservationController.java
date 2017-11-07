@@ -10,7 +10,7 @@ import java.util.Set;
 
 @Controller
 @CrossOrigin(origins = "http://localhost")
-@RequestMapping(path="/user")
+@RequestMapping(path="/reservation")
 public class ReservationController {
 
     @Autowired

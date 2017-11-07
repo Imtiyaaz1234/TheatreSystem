@@ -17,7 +17,7 @@ public class UsersController {
 
     @GetMapping(path="/all")
     public @ResponseBody
-    Set<Users> getAllAdmin()
+    Set<Users> getAllUsers()
     {
         return userService.readAll();
     }
