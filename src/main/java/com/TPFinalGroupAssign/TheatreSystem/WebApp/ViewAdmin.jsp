@@ -68,25 +68,22 @@
     <%@ page isELIgnored="false" %>
 </head>
 <body onload='document.loginForm.username.focus();'>
- <table id="clientTable" border="1" cellpadding="5">
-                                <caption><h2>List of accounts</h2></caption>
-                                <tr>
-                                    <th>ID</th>
-                                    <th>Type</th>
-                                    <th>Balance</th>
-                                    <th>Creation</th>
-                                    <th>Client</th>
-                                </tr>
-                                <tr>
-                                    <td><c:out value='${account.accountNumber}'/></td>
-                                    <td><c:out value="${account.accountType}"/></td>
-                                    <td><c:out value="${account.accBalance}" /></td>
-                                    <td><c:out value="${account.CreateAccount}" /></td>
-                                    <td><c:out value="${account.client}" /></td>
-                                </tr>
-  </table>
- <div class = "login">
-     <a href= "/home"><button type="submit" class="btn btn-primary btn-block btn-large">Redirect</button></a>
- </div>
+<table id="adminTable" border="1" cellpadding="5">
+    <caption><h2>List of Admin</h2></caption>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Surname</th>
+    </tr>
+    <tr>
+        <td><c:out value='${Admin.id}'/></td>
+        <td><c:out value="${Admin.name}"/></td>
+        <td><c:out value="${Admin.surname}" /></td>
+    </tr>
+
+</table>
+<div class = "login">
+    <a href= "/home"><button type="submit" class="btn btn-primary btn-block btn-large">Redirect</button></a>
+</div>
 </body>
 </html>

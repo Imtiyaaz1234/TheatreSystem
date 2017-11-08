@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html >
 <head>
   <meta charset="UTF-8">
   <title>Login Form</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+
       <style>
+
       @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 .btn { display: inline-block; *display: inline; *zoom: 1; padding: 4px 10px 4px; margin-bottom: 0; font-size: 13px; line-height: 18px; color: #333333; text-align: center;text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75); vertical-align: middle; background-color: #f5f5f5; background-image: -moz-linear-gradient(top, #ffffff, #e6e6e6); background-image: -ms-linear-gradient(top, #ffffff, #e6e6e6); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#e6e6e6)); background-image: -webkit-linear-gradient(top, #ffffff, #e6e6e6); background-image: -o-linear-gradient(top, #ffffff, #e6e6e6); background-image: linear-gradient(top, #ffffff, #e6e6e6); background-repeat: repeat-x; filter: progid:dximagetransform.microsoft.gradient(startColorstr=#ffffff, endColorstr=#e6e6e6, GradientType=0); border-color: #e6e6e6 #e6e6e6 #e6e6e6; border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25); border: 1px solid #e6e6e6; -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px; -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05); cursor: pointer; *margin-left: .3em; }
 .btn:hover, .btn:active, .btn.active, .btn.disabled, .btn[disabled] { background-color: #e6e6e6; }
@@ -64,188 +66,28 @@ input {
 	transition: box-shadow .5s ease;
 }
 input:focus { box-shadow: inset 0 -5px 45px rgba(100,100,100,0.4), 0 1px 1px rgba(255,255,255,0.2); }
-
-.container-1{
-  width: 300px;
-  left: 93px;
-  vertical-align: middle;
-  white-space: nowrap;
-  position: relative;
-}
-
-.container-1 input#search{
-  width: 300px;
-  height: 50px;
-  background: #2b303b;
-  border: none;
-  font-size: 10pt;
-  float: left;
-  color: #63717f;
-  padding-left: 45px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-}
-.container-1 input#search::-webkit-input-placeholder {
-   color: #65737e;
-}
-
-.container-1 input#search:-moz-placeholder { /* Firefox 18- */
-   color: #65737e;
-}
-
-.container-1 input#search::-moz-placeholder {  /* Firefox 19+ */
-   color: #65737e;
-}
-
-.container-1 input#search:-ms-input-placeholder {
-   color: #65737e;
-}
-
-.container-1 .icon{
-  position: absolute;
-  top: 50%;
-  margin-left: 17px;
-  margin-top: 17px;
-  z-index: 1;
-  color: #4f5b66;
-}
-@import url(http://fonts.googleapis.com/css?family=Cabin:400);
-
-
-
-
-
-
-.webdesigntuts-workshop form {
-	background: #111;
-	background: linear-gradient(#1b1b1b, #111);
-	border: 1px solid #000;
-
-	box-shadow: inset 0 0 0 1px #272727;
-	display: inline-block;
-	font-size: 0px;
-	left: 20px;
-}
-
-.webdesigntuts-workshop input {
-	background: #222;
-	background: linear-gradient(#333, #222);
-	border: 1px solid #444;
-	border-radius: 5px 0 0 5px;
-	box-shadow: 0 2px 0 #000;
-	color: #888;
-	display: block;
-	float: left;
-	font-family: 'Cabin', helvetica, arial, sans-serif;
-	font-size: 13px;
-	font-weight: 400;
-	height: 40px;
-	text-shadow: 0 -1px 0 #000;
-	width: 200px;
-}
-
-.ie .webdesigntuts-workshop input {
-
-}
-
-.webdesigntuts-workshop input::-webkit-input-placeholder {
-   color: #888;
-}
-
-.webdesigntuts-workshop input:-moz-placeholder {
-   color: #888;
-}
-
-.webdesigntuts-workshop input:focus {
-	animation: glow 800ms ease-out infinite alternate;
-	background: #222922;
-	background: linear-gradient(#333933, #222922);
-	border-color: #393;
-	box-shadow: 0 0 5px rgba(0,255,0,.2), inset 0 0 5px rgba(0,255,0,.1), 0 2px 0 #000;
-	color: #efe;
-	outline: none;
-}
-
-.webdesigntuts-workshop input:focus::-webkit-input-placeholder {
-	color: #efe;
-}
-
-.webdesigntuts-workshop input:focus:-moz-placeholder {
-	color: #efe;
-}
-
-.webdesigntuts-workshop button {
-	background: #222;
-	background: linear-gradient(#333, #222);
-	box-sizing: content-box;
-	border: 1px solid #444;
-	border-left-color: #000;
-	border-radius: 0 5px 5px 0;
-	box-shadow: 0 2px 0 #000;
-	color: #fff;
-	display: block;
-	float: left;
-	font-family: 'Cabin', helvetica, arial, sans-serif;
-	font-size: 13px;
-	font-weight: 400;
-	height: 40px;
-	line-height: 40px;
-	margin: 0;
-	padding: 0;
-	left: 1px;
-	position: relative;
-	text-shadow: 0 -1px 0 #000;
-	width: 80px;
-}
-
-.webdesigntuts-workshop button:hover,
-.webdesigntuts-workshop button:focus {
-	background: #292929;
-	background: linear-gradient(#393939, #292929);
-	color: #5f5;
-	outline: none;
-}
-
-.webdesigntuts-workshop button:active {
-	background: #292929;
-	background: linear-gradient(#393939, #292929);
-	box-shadow: 0 1px 0 #000, inset 1px 0 1px #222;
-	top: 1px;
-}
-
-@keyframes glow {
-    0% {
-		border-color: #393;
-		box-shadow: 0 0 5px rgba(0,255,0,.2), inset 0 0 5px rgba(0,255,0,.1), 0 2px 0 #000;
-    }
-    100% {
-		border-color: #6f6;
-		box-shadow: 0 0 20px rgba(0,255,0,.6), inset 0 0 10px rgba(0,255,0,.4), 0 2px 0 #000;
-    }
-}
-.container-2 input#search:hover, .container-1 input#search:focus, .container-1 input#search:active{
-    outline:none;
-    background: #ffffff;
-  }
 </style>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 
 </head>
-<body onload='document.loginForm.username.focus();'>
-	<div class="update_client">
-            <form action = "/home/update" method="POST">
-    			    	<input type="text" value='${client.cCnp}' name="clientCnp" placeholder="CNP"  required="required" pattern="[12][0-9]{12}" />
-                        <input type="text" value='${client.cIdNumber}' name="clientIdNumber" placeholder="ID Number"  required="required" />
-                        <input type="text" value='${client.cName}' name="clientName" placeholder="Name" required="required" />
-                        <input type="email" value='${client.cEmail}' name="clientEmail" placeholder="Email" required="required" />
-                        <input type="text" value='${client.cPhone}' name ="clientPhone" placeholder="07xxxxxxxx" required="required" pattern="[07][0-9]{9}">
-                        <input type="text" value='${client.cAddress}' name="clientAddress" placeholder="Address" required="required" />
-                        <input type="hidden" value='${client.cId}' name = "search"/>
+
+<body>
+	<div class="addUsers">
+    		<form name='addUsers' action="home/addUsers"
+    			 method='POST'>
+
+
+                        <input type="text" name="userId" placeholder="ID Number" required="required" />
+                        <input type="text" name="name" placeholder="Name" required="required" />
+                        <input type="text" name="surname" placeholder="surname" required="required" />
+
+                         <input type="email" name="clientEmail" placeholder="Email" required="required" />
+
                         <button type="submit" class="btn btn-primary btn-block btn-large">Submit</button>
-    			        <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
-    	    </form>
+    			        <input type="hidden" name="${_csrf.parameterName}"
+    				        value="${_csrf.token}" />
+    		</form>
     	</div>
 </body>
 </html>

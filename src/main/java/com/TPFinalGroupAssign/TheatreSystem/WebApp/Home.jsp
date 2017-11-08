@@ -429,19 +429,19 @@ body {
                 <li><a href="/home" onclick="hideSearch()">Home</a></li>
                 <li><a href="#">Search</a>
                     <ul class="submenu">
-                        <li><a href="#" onclick="displaySearch()">Clients</a></li>
-                        <li><a href="#" onclick="displaySearch()">Accounts</a></li>
+                        <li><a href="#" onclick="displaySearch()">Users</a></li>
+                        <li><a href="#" onclick="displaySearch()">Movies</a></li>
                     </ul>
                 </li>
                 <li class="active"><a href="">Add</a>
                     <ul class="submenu">
-                        <li><a href="/home/add_client">Client</a></li>
-                        <li><a href="/home/add_account">Account</a></li>
+                        <li><a href="/home/addUsers">Users</a></li>
+                        <li><a href="/home/addAdmin">Admin</a></li>
                     </ul>
                 </li>
-                <li><a href="/transfer">Transfer</a> </li>
-                <li><a href="/withdraw">Withdraw</a> </li>
-                <li><a href="/admin">Admin</a></li>
+                <li><a href="/movieshow">Movies</a> </li>
+                <li><a href="/horror">Horror</a> </li>
+                <li><a href="/documentary">Documentary</a></li>
                 <li><a href="/logout">Logout</a></li>
             </ul>
         </div>
