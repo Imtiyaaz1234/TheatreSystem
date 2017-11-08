@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@ taglib uri="//java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
     <meta charset="UTF-8">
@@ -68,28 +68,24 @@
     <%@ page isELIgnored="false" %>
 </head>
 <body onload='document.loginForm.username.focus();'>
-<table id="clientTable" border="1" cellpadding="5">
-    <caption><h2>List of employees</h2></caption>
-    <tr>
-        <th>ID</th>
-        <th>CNP</th>
-        <th>Name</th>
-        <th>Email</th>
-        <th>Phone</th>
-        <th>Address</th>
-    </tr>
-    <tr>
-        <td><c:out value='${employee.employeeNumber}'/></td>
-        <td><c:out value="${employee.employeeCnp}"/></td>
-        <td><c:out value="${employee.employeeName}" /></td>
-        <td><c:out value="${employee.employeeEmail}" /></td>
-        <td><c:out value="${employee.employeePhone}" /></td>
-        <td><c:out value="${employee.employeeAddress}"/></td>
-    </tr>
+ <table id="movieTable" border="1" cellpadding="5">
+                                <caption><h2>List of Movies</h2></caption>
+                                <tr>
+                                    <th>SeatingId</th>
+                                    <th>MovieId</th>
+                                    <th>Date</th>
+                                    <th>Time</th>
+                                </tr>
+                                <tr>
+                                    <td><c:out value='${MovieShow.seatingId}'/></td>
+                                    <td><c:out value="${MovieShow.mId}"/></td>
+                                    <td><c:out value="${MovieShow.date}" /></td>
+                                    <td><c:out value="${MovieShow.time}" /></td>
 
-</table>
-<div class = "login">
-    <a href= "/home"><button type="submit" class="btn btn-primary btn-block btn-large">Redirect</button></a>
-</div>
+                                </tr>
+  </table>
+ <div class = "login">
+     <a href= "/home"><button type="submit" class="btn btn-primary btn-block btn-large">Redirect</button></a>
+ </div>
 </body>
 </html>

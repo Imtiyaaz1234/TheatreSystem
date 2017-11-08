@@ -68,32 +68,27 @@
     <%@ page isELIgnored="false" %>
 </head>
 <body onload='document.loginForm.username.focus();'>
- <table id="clientTable" border="1" cellpadding="5">
+ <table id="usersTable" border="1" cellpadding="5">
                                 <caption><h2>List of users</h2></caption>
                                 <tr>
-                                    <th>ID</th>
-                                    <th>CNP</th>
-                                    <th>Serial Number</th>
+                                    <th>UserId</th>
                                     <th>Name</th>
+                                    <th>Surname</th>
                                     <th>Email</th>
-                                    <th>Phone</th>
-                                    <th>Address</th>
                                 </tr>
                                 <tr>
 
-                                    <td><c:out value='${client.cId}'/></td>
-                                    <td><c:out value="${client.cCnp}"/></td>
-                                    <td><c:out value="${client.cIdNumber}" /></td>
-                                    <td><c:out value="${client.cName}" /></td>
+                                    <td><c:out value='${Users.userID}'/></td>
+                                    <td><c:out value="${Users.name}"/></td>
+                                    <td><c:out value="${Users.surname}" /></td>
                                     <td><c:out value="${client.cEmail}" /></td>
-                                    <td><c:out value="${client.cPhone}" /></td>
-                                    <td><c:out value="${client.cAddress}" /></td>
+
 
                                 </tr>
 
   </table>
  <div class = "login">
-     <a href= "/home"><button type="submit" class="btn btn-primary btn-block btn-large">Redirect</button></a>
+     <a href= "/users"><button type="submit" class="btn btn-primary btn-block btn-large">Redirect</button></a>
  </div>
 </body>
 </html>

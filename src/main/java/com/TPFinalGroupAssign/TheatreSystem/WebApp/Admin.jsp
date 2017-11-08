@@ -430,7 +430,7 @@ body {
                 <li><a href="/home" onclick="hideSearch()">Home</a></li>
                 <li><a href="">Search</a>
                     <ul class="submenu">
-                        <li><a href="#" onclick="displaySearch()">Employees</a></li>
+                        <li><a href="#" onclick="displaySearch()">List of Movies</a></li>
                         <!--<li><a href="#">Submenu c</a></li>
                         <li><a href="#">Submenu d</a></li>
                         <li><a href="#">Submenu e</a></li>
@@ -441,9 +441,9 @@ body {
                 </li>
                 <li class="active"><a href="">Add</a>
                     <ul class="submenu">
-                        <li><a href="/home/add_client">Client</a></li>
-                        <li><a href="/home/add_account">Account</a></li>
-                        <li><a href="/admin/add_employee">Employee</a></li>
+                        <li><a href="/admin/addMovieShow">Movie</a></li>
+                        <li><a href="/admin/addAdmin">Admin</a></li>
+                        <li><a href="/admin/addUsers">User</a></li>
                     </ul>
                 </li>
                 <li><a href="admin/report">Report</a>
